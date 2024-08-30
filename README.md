@@ -11,7 +11,7 @@ step 3 : now for installing the dependencies write the below command in your ter
 npm install
 ** with this above command it will install all the dependecies listed in package.json and used in the project **
 
-step 4: after installing the depenedcies we can run the react application in our local machine by writing the below command in the terminal
+step 4: after installing the depenedcies we can run the react application in our local machine by writing the below command in the terminal:
 npm run dev
 
 ** now the program will run at the browser with some port number at our local machine.
