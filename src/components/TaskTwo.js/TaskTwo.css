@@ -1,0 +1,152 @@
+/* Basic Styles */
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    margin: 10px 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .grid-item {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styles for the sort and copy section */
+  .sort-controls {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sort-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .sort-controls button:hover {
+    background-color: #0056b3;
+  }
+  
+  .sorted-words {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .sorted-words h2 {
+    margin-bottom: 12px;
+    font-size: 19px;
+  }
+  
+  .sorted-words p {
+    font-size: 16px;
+    word-wrap: break-word;
+  }
+  
+  .copy-feedback {
+    margin-top: 10px;
+    font-size: 14px;
+    color: green;
+  }
+  
+  /* Responsive Design */
+  
+  /* For devices with a max width of 768px (tablets and smaller) */
+  @media (max-width: 768px) {
+    .controls button,
+    .sort-controls button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+  
+    .grid-item {
+      padding: 15px;
+      font-size: 14px;
+    }
+  
+    .sorted-words {
+      padding: 15px;
+    }
+  
+    .sorted-words h2 {
+      font-size: 16px;
+    }
+  
+    .sorted-words p {
+      font-size: 14px;
+    }
+  }
+  
+  /* For devices with a max width of 480px (mobile phones) */
+  @media (max-width: 480px) {
+    .controls button,
+    .sort-controls button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    }
+  
+    .grid-item {
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    .sorted-words {
+      padding: 10px;
+    }
+  
+    .sorted-words h2 {
+      font-size: 14px;
+    }
+  
+    .sorted-words p {
+      font-size: 12px;
+    }
+  }
+  

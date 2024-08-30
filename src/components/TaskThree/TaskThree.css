@@ -1,0 +1,87 @@
+.paginated-card-view {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 10px 10px;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    word-wrap: break-word;
+  }
+  
+  .card {
+    background-color: #ffff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* background-color: rgb(151, 255, 255); */
+    
+  }
+ 
+  .card h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #232121;
+  }
+
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    font-size: 16px;
+    color: #333;
+  }
+
+  @media (max-width: 480px) {
+    .paginated-card-view {
+      padding: 10px;
+    }
+  
+    .card-container {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 10px;
+    }
+  
+    .card {
+      padding: 10px;
+    }
+  
+    .pagination button {
+      padding: 6px 10px;
+      margin: 0 3px;
+    }
+  
+    .pagination span {
+      font-size: 12px;
+    }
+  }
+  

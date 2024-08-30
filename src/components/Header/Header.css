@@ -1,0 +1,42 @@
+/* Container for the header */
+.header {
+    width: 90vw;
+    background-color: #9fa1e1;
+    padding: 10px 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.logo img{
+    
+    width: 60px;
+    height: 60px;
+}
+
+/* Navigation items container */
+.nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Navigation item styling */
+.nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #ff9800;
+}

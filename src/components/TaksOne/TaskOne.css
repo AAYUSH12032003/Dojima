@@ -1,0 +1,52 @@
+/* Task container styling */
+.taskone-container {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: rgb(106, 105, 104);
+}
+
+/* Select dropdown styling */
+.taskone-container .Select {
+    background-color: aqua;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .taskone-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .taskone-container .Select {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .taskone-container {
+        padding: 10px;
+    }
+
+    .taskone-container .Select {
+        font-size: 0.85rem;
+    }
+}
